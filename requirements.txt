@@ -2,4 +2,4 @@ qdrant_client
 torch
 transformers
 openai
-sreamlit
+streamlit
