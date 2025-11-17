@@ -43,9 +43,22 @@ pdf_multimodal_rag 有以下功能：
 * 文本的embedding利用nomic-ai/nomic-embed-text-v1.5，图片的embedding利用nomic-ai/nomic-embed-vision-v1.5
 可以自行去下载相关模型https://huggingface.co/nomic-ai
 
-* llm问答部分可自行部署开源的多模态模型或者调用第三方多模态API
+* 当前embedding模型使用的是google/siglip-large-patch16-384 
+
+* llm问答部分使用的是ollama部署的多模态模型qwen2.5vl:72b，自行部署或者使用其他多模态模型都可以
+
+### 安装
+
+1. 新建pythn 3.11虚拟环境
+2. 执行 `pip install -r requirements.txt`
+
+### 运行
+
+1. 启动虚拟环境 `source ../ragflow/.venv/bin/activate`
+2. 运行 `streamlit run ui_web.py`
 
 ### ui
+
 【ui_web.py】
 
 利用streamlit实现web页面:
